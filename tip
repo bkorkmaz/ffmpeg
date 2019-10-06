@@ -1,3 +1,6 @@
+#Image sequence to video
 ffmpeg -framerate 25 -i 00%2d.png output.mkv
+    00%2d.png -> %2d -> two digits incremental decimal number
 
-00%2d.png -> %2d -> two digits incremental decimal number
+#Video to image sequence
+ffmpeg -i video.webm image-%03d.png
