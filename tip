@@ -4,3 +4,6 @@ ffmpeg -framerate 25 -i 00%2d.png output.mkv
 
 ##Video to image sequence
 ffmpeg -i video.webm image-%03d.png
+
+## Remove audio
+ffmpeg -i $input_file -c copy -an $output_file
