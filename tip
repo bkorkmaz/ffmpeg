@@ -7,3 +7,6 @@ ffmpeg -i video.webm image-%03d.png
 
 ## Remove audio
 ffmpeg -i $input_file -c copy -an $output_file
+
+## Concatenate video files with codec copy option.
+ffmpeg -i "concat:$input_file|$input_file2|$input_file3|$input_file4" -codec copy $output_file
