@@ -10,3 +10,6 @@ ffmpeg -i $input_file -c copy -an $output_file
 
 ## Concatenate video files with codec copy option.
 ffmpeg -i "concat:$input_file|$input_file2|$input_file3|$input_file4" -codec copy $output_file
+
+## mp4 (any format) to gif
+https://superuser.com/questions/556029/how-do-i-convert-a-video-to-gif-using-ffmpeg-with-reasonable-quality
