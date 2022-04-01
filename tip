@@ -13,3 +13,6 @@ ffmpeg -i "concat:$input_file|$input_file2|$input_file3|$input_file4" -codec cop
 
 ## mp4 (any format) to gif
 https://superuser.com/questions/556029/how-do-i-convert-a-video-to-gif-using-ffmpeg-with-reasonable-quality
+
+## video cut (no-encode) 
+ffmpeg -ss 00:01:00 -to 00:02:00  -i input.mp4 -c copy output.mp4
